@@ -50,7 +50,6 @@ async function fetchNeighboringCountry(countryCode) {
         const data = await response.json();
         const country = data[0];
 
-        // Append bordering country information
         document.getElementById("bordering-countries").innerHTML += `
             <div class="bordering-country">
                 <img src="${country.flags.png}" alt="Flag of ${country.name.common}">
